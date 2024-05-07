@@ -1,0 +1,185 @@
+/* Variables */
+:root{
+    --green: #BED1CF;
+    --beige: #FFE4C9;
+    --red: #E78895;
+    --deep-red: #EA5455;
+    --skin: #FFF7F1;
+    --grey: #E5E1DA;
+    --dark-grey: #A9A9A9;
+    --font-size: 16px;
+}
+
+/* For all elements */
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+.outer-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--skin);
+    border: 2px solid #ccc;
+}
+.content-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.calendar-container {
+    margin: 20px;
+    padding: 30px 20px;
+    background-color: var(--green);
+    border: 2px solid #ccc;
+}
+
+.inner-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar {
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: var(--skin);
+}
+
+.calendar .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+.calendar .header .month{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.calendar .header .btns {
+    display: flex;
+    gap: 10px;
+}
+
+.calendar .header .btns .btn,
+.clearBtn { /* calendar 2 */
+    display: flex;
+    width: 50px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: var(--red);
+    font-size: var(--font-size);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.calendar .header .btns .btn:hover,
+.date-elements .year:hover, /* calendar 2 */
+.date-elements .months:hover,
+.date-elements .day:hover,
+.clearBtn:hover {
+    background-color: var(--red);
+    transform: scale(1.1);
+}
+
+.weekdays {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.weekdays .day {
+    width: calc(100% / 7 - 10px);
+    text-align: center;
+    font-size: var(--font-size);
+    font-weight: bold;
+}
+
+.days,
+.calendar .date-elements { /* calendar 2 */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.days .day,
+.date-elements .day { /* calendar 2 */
+    display: flex;
+    width: calc(100% / 7 - 10px);
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: var(--font-size);
+    background-color: #FFF;
+    transition: all 0.3s;
+}
+.days .day:not(.next):not(.prev):hover{
+    background-color: var(--red);
+    transform: scale(1.1);
+}
+
+.day.today {
+    background-color: var(--deep-red);
+}
+
+.prev.day, .next.day {
+    background-color: var(--grey);
+    color: var(--dark-grey);
+}
+
+/* Calendar 2 */
+.calendar .header .select {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.date-elements .year, .date-elements .months {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: var(--font-size);
+    background-color: #FFF;
+    transition: all 0.3s;
+}
+
+.date-elements .year, .date-elements .months {
+    width: calc(100% / 5 - 10px);
+}
+
+.result {
+    display: flex;
+    width: 90%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--dark-grey)
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: var(--grey);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+

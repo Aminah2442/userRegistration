@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Dynamic Calendars</title>
+
+    <!-- StyleSheet -->
+    <link rel = "stylesheet" href = "calendarCSS.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/b8ee9903ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class = "outer-container">
+    <h1>My Dynamic Calendars</h1>
+
+    <div class = "content-grid">
+
+        <!-- Calender 1 -->
+        <div class = "calendar-container">
+            <div class = "inner-container">
+                <div class = "calendar">
+                    <div class = "header">
+                        <div class = "month"></div>
+                        <div class = "btns">
+                            <div class = "today btn">
+                                <i class = "fas fa-calendar-day"></i>
+                            </div>
+                            <div class = "prev btn">
+                                <i class = "fas fa-chevron-left"></i>
+                            </div>
+                            <div class = "next btn">
+                                <i class = "fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "weekdays">
+                        <div class = "day">Sun</div>
+                        <div class = "day">Mon</div>
+                        <div class = "day">Tue</div>
+                        <div class = "day">Wed</div>
+                        <div class = "day">Thu</div>
+                        <div class = "day">Fri</div>
+                        <div class = "day">Sat</div>
+                    </div>
+                    <div class = "days">
+                        <!-- Days for previous month -->
+                        <!-- Days for current month -->
+                        <!-- Days for next month -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calender 2 -->
+        <div class = "calendar-container">
+            <div class="inner-container">
+                <div class="calendar">
+                    <div class="header">
+                        <div class="select"></div>
+                    </div>
+                    <div class="date-elements">
+                        <!-- year (2010 - 2030) -->
+                        <!--       Months       -->
+                        <!--        Days        -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="result">Your Selected date is</div>
+                <div class="clearBtn">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Script -->
+<script src = "calendarJS.js"></script>
+
+</body>
+</html>
