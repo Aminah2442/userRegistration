@@ -1,0 +1,48 @@
+.container {
+    margin: auto;
+    padding: 20px;
+}
+.container .row {
+    justify-content: center;
+}
+.container .row .our-details {
+    padding: 30px;
+    height: 100%;
+}
+.container .col {
+    padding: 10px;
+}
+.navbar {
+    margin-top: 30px;
+}
+.navbar .btn {
+    margin: 8px;
+}
+label {
+    font-weight: bold;
+}
+.our-details {
+    background-color: #EAEAEA;
+}
+.our-details .col {
+    padding: 20px;
+}
+.btns {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.btns .btn {
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+.our-details {
+    font-size: 18px;
+}
+i {
+    font-size: 24px;
+}
+.contact-form .row, .our-details .row {
+    padding-bottom: 10px;
+}

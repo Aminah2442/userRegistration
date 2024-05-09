@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="bootstrapIntroCSS.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/b8ee9903ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar" style="background-color: #EAEAEA;">
+    <form class="container-fluid justify-content-start">
+        <button class="btn btn-outline-dark" type="button">Home</button>
+        <button class="btn btn-outline-dark" type="button">Contact Us</button>
+    </form>
+</nav>
+
+<div class="container ">
+    <div class="row">
+        <div class="col-6">
+            <h1>Contact Us</h1>
+            <p>Please fill in your information and we’ll respond to you as soon as possible</p>
+            <div class="contact-form">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <label for="fname" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Jane">
+                        </div>
+                        <div class="col">
+                            <label for="lname" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Smitherton">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="inquiry" class="form-label">Purpose of inquiry</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="inquiry" placeholder="Inquiry" aria-label="Inquiry" readonly>
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" onclick="selectedOption('General Inquiry')">General Inquiry</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="selectedOption('Partnership Opportunity')">Partnership Opportunity</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="selectedOption('Feedback')">Feedback</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="selectedOption('Other')">Other</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="message" class="form-label">Your message</label>
+                            <textarea id="message" placeholder="Enter your question or message" rows="5" cols="80"></textarea>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <input type="reset" class="btn btn-dark" value="Clear">
+                        <input type="submit" class="btn btn-dark" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="our-details">
+                <h1>Our Details</h1>
+                <div class="row">
+                    <div class="col">
+                        <i class="fa-solid fa-address-book"></i>
+                        <b>Address:</b> 456 Creative Street, Suite 202, Imaginaria, NY 12345, USA
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <i class="fa-solid fa-phone"></i>
+                        <b>Phone:</b> +1 (555) 123-4567
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <b>Website:</b> innovatexforge.com
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <b>Email:</b> contact@innovatexforge.com
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function selectedOption(option) {
+        document.getElementById('inquiry').value = option;
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
